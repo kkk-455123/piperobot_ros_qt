@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>images/auto.png</file>
+        <file>images/behind.png</file>
+        <file>images/front.png</file>
+        <file>images/hand.png</file>
+        <file>images/location.png</file>
+        <file>images/robot.png</file>
+        <file>images/robot_state.png</file>
+        <file>images/log.png</file>
+        <file>images/查询.png</file>
+        <file>images/录入.png</file>
+        <file>images/云上传.png</file>
+        <file>images/U盘.png</file>
+        <file>images/声波.png</file>
+        <file>images/视频.png</file>
+        <file>images/robot2.png</file>
+        <file>images/robot3.png</file>
+    </qresource>
+</RCC>

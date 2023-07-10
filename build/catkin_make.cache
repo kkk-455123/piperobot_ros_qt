@@ -1,0 +1,2 @@
+camera_display:ros_handle_control
+-DCATKIN_DEVEL_PREFIX=/home/piperobot/piperobot/devel -DCMAKE_INSTALL_PREFIX=/home/piperobot/piperobot/install -G Unix Makefiles

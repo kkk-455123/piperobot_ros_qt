@@ -1,0 +1,151 @@
+系统启动	Sun Jul  9 17:46:04 2023
+系统启动	Sun Jul  9 18:02:26 2023
+系统启动	Sun Jul  9 18:07:32 2023
+Current Path: /home/piperobot/piperobot/devel/lib/camera_display	Sun Jul  9 18:07:32 2023
+系统启动	Sun Jul  9 18:08:38 2023
+Current Path: /home/piperobot/piperobot/devel/lib/camera_display	Sun Jul  9 18:08:38 2023
+系统启动	Sun Jul  9 22:17:37 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Sun Jul  9 22:17:37 2023
+系统启动	Sun Jul  9 22:18:30 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Sun Jul  9 22:18:30 2023
+系统启动	Sun Jul  9 22:18:35 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Sun Jul  9 22:18:35 2023
+系统启动	Mon Jul 10 10:12:33 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 10:12:35 2023
+系统启动	Mon Jul 10 10:14:10 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 10:14:10 2023
+系统启动	Mon Jul 10 10:15:18 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 10:15:19 2023
+系统启动	Mon Jul 10 10:16:15 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 10:16:16 2023
+系统启动	Mon Jul 10 10:17:29 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 10:17:29 2023
+系统启动	Mon Jul 10 10:18:35 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 10:18:36 2023
+系统启动	Mon Jul 10 12:07:40 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:07:40 2023
+系统启动	Mon Jul 10 12:08:52 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:08:52 2023
+系统启动	Mon Jul 10 12:09:25 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:09:25 2023
+系统启动	Mon Jul 10 12:22:54 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:22:54 2023
+系统启动	Mon Jul 10 12:25:58 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:25:58 2023
+系统启动	Mon Jul 10 12:26:54 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:26:55 2023
+系统启动	Mon Jul 10 12:27:45 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:27:45 2023
+系统启动	Mon Jul 10 12:28:37 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:28:37 2023
+系统启动	Mon Jul 10 12:29:21 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:29:21 2023
+系统启动	Mon Jul 10 12:30:12 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:30:12 2023
+系统启动	Mon Jul 10 12:31:54 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:31:54 2023
+系统启动	Mon Jul 10 12:32:26 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:32:26 2023
+系统启动	Mon Jul 10 12:32:56 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:32:56 2023
+系统启动	Mon Jul 10 12:33:35 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:33:35 2023
+系统启动	Mon Jul 10 12:42:40 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:42:40 2023
+系统启动	Mon Jul 10 12:57:19 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 12:57:19 2023
+系统启动	Mon Jul 10 13:03:59 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 13:03:59 2023
+系统启动	Mon Jul 10 15:00:51 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:00:51 2023
+系统启动	Mon Jul 10 15:02:11 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:02:11 2023
+系统启动	Mon Jul 10 15:04:00 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:04:00 2023
+系统启动	Mon Jul 10 15:06:48 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:06:48 2023
+系统启动	Mon Jul 10 15:16:02 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:16:02 2023
+系统启动	Mon Jul 10 15:16:29 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:16:29 2023
+系统启动	Mon Jul 10 15:18:37 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:18:37 2023
+系统启动	Mon Jul 10 15:22:13 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:22:13 2023
+系统启动	Mon Jul 10 15:22:49 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:22:49 2023
+系统启动	Mon Jul 10 15:27:07 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:27:07 2023
+系统启动	Mon Jul 10 15:30:17 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:30:17 2023
+系统启动	Mon Jul 10 15:30:25 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:30:25 2023
+系统启动	Mon Jul 10 15:31:50 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:31:50 2023
+系统启动	Mon Jul 10 15:32:12 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:32:12 2023
+系统启动	Mon Jul 10 15:33:00 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:33:00 2023
+系统启动	Mon Jul 10 15:34:13 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 15:34:13 2023
+系统启动	Mon Jul 10 16:08:56 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 16:08:57 2023
+系统启动	Mon Jul 10 16:22:02 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 16:22:03 2023
+系统启动	Mon Jul 10 16:26:30 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 16:26:30 2023
+系统启动	Mon Jul 10 17:36:21 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 17:36:21 2023
+系统启动	Mon Jul 10 17:36:33 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 17:36:33 2023
+信息录入	Mon Jul 10 17:37:21 2023
+更新数据	Mon Jul 10 17:37:23 2023
+sql语句执行成功	Mon Jul 10 17:37:23 2023
+表的行数：1	Mon Jul 10 17:37:23 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2000-01-01 AND 任务编号 = 中山村路非开挖修复	Mon Jul 10 17:37:23 2023
+数据已存在,更新	Mon Jul 10 17:37:23 2023
+更新成功	Mon Jul 10 17:37:23 2023
+系统启动	Mon Jul 10 17:39:32 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 17:39:32 2023
+系统启动	Mon Jul 10 17:52:54 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 17:52:54 2023
+系统启动	Mon Jul 10 17:53:55 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 17:53:55 2023
+系统启动	Mon Jul 10 18:02:34 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 18:02:34 2023
+更新数据	Mon Jul 10 18:03:44 2023
+sql语句执行成功	Mon Jul 10 18:03:44 2023
+表的行数：0	Mon Jul 10 18:03:44 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-07-10 AND 任务编号 = 中山村路非开挖修复	Mon Jul 10 18:03:44 2023
+数据不存在, 插入	Mon Jul 10 18:03:44 2023
+更新成功	Mon Jul 10 18:03:44 2023
+系统启动	Mon Jul 10 20:09:59 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 20:10:00 2023
+系统启动	Mon Jul 10 20:10:41 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 20:10:41 2023
+更新数据	Mon Jul 10 20:12:15 2023
+sql语句执行成功	Mon Jul 10 20:12:15 2023
+表的行数：1	Mon Jul 10 20:12:15 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-07-10 AND 任务编号 = 中山村路非开挖修复	Mon Jul 10 20:12:15 2023
+数据已存在,更新	Mon Jul 10 20:12:15 2023
+更新成功	Mon Jul 10 20:12:15 2023
+系统启动	Mon Jul 10 20:39:00 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 10 20:39:01 2023
+更新数据	Mon Jul 10 20:39:59 2023
+sql语句执行成功	Mon Jul 10 20:39:59 2023
+表的行数：0	Mon Jul 10 20:39:59 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-06-03 AND 任务编号 = 中山村路非开挖修复	Mon Jul 10 20:39:59 2023
+数据不存在, 插入	Mon Jul 10 20:39:59 2023
+更新成功	Mon Jul 10 20:39:59 2023
+更新数据	Mon Jul 10 20:40:18 2023
+sql语句执行成功	Mon Jul 10 20:40:18 2023
+表的行数：0	Mon Jul 10 20:40:18 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-06-10 AND 任务编号 = 中山村路非开挖修复	Mon Jul 10 20:40:18 2023
+数据不存在, 插入	Mon Jul 10 20:40:18 2023
+更新成功	Mon Jul 10 20:40:18 2023
+更新数据	Mon Jul 10 20:41:31 2023
+sql语句执行成功	Mon Jul 10 20:41:31 2023
+表的行数：0	Mon Jul 10 20:41:31 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-06-28 AND 任务编号 = 中山村路非开挖修复	Mon Jul 10 20:41:31 2023
+数据不存在, 插入	Mon Jul 10 20:41:31 2023
+更新成功	Mon Jul 10 20:41:31 2023

@@ -1,0 +1,8 @@
+prefix=/home/piperobot/piperobot/devel
+
+Name: camera_display
+Description: Description of camera_display
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

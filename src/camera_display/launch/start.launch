@@ -1,0 +1,14 @@
+<launch>
+    <!-- 启动qt节点 -->
+    <node pkg="camera_display" type="camera_display" name="qt_node" output="screen"/> 
+    <!-- 启动手柄节点，respawn="true"表示节点挂掉时会自动重启 -->
+    <node respawn="true" pkg="joy" type="joy_node" name="joy_node" />
+    
+    <!-- 启动我们创建的手柄控制节点 -->
+    <!-- node pkg="ros_handle_control" type="teleop_turtle" name="control_node" output="screen"/ --> 
+    
+    <!-- 向参数服务器写入参数 -->
+    <!-- <param name="axis_linear" value="1" type="int"/> -->
+    <!-- <param name="axis_angular" value="3" type="int"/> -->
+   
+</launch>

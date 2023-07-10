@@ -1,0 +1,8 @@
+prefix=/home/piperobot/piperobot/install
+
+Name: ros_handle_control
+Description: Description of ros_handle_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

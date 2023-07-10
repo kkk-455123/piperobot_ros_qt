@@ -1,0 +1,13 @@
+-I/opt/ros/noetic/include
+-I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/usr/include/opencv4
+-I/home/piperobot/piperobot/src/camera_display
+-I/home/piperobot/piperobot/build/camera_display
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="camera_display"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/piperobot/piperobot/build/camera_display/include/camera_display/moc_test.cpp
+/home/piperobot/piperobot/src/camera_display/include/camera_display/test.h
