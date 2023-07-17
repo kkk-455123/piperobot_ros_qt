@@ -119,6 +119,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwind
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractproxymodel.h
@@ -129,6 +130,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwind
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -199,6 +201,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwind
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h
@@ -500,6 +503,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cp
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractproxymodel.h
@@ -510,6 +514,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cp
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -580,6 +585,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cp
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
 camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h
@@ -1042,6 +1048,7 @@ camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractproxymodel.h
@@ -1052,6 +1059,7 @@ camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -1124,6 +1132,7 @@ camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
 camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h
@@ -1430,6 +1439,7 @@ camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperob
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QVariant
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
@@ -1441,6 +1451,7 @@ camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperob
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -1514,6 +1525,7 @@ camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperob
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
 camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h
@@ -1856,6 +1868,7 @@ camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractproxymodel.h
@@ -1866,6 +1879,7 @@ camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -1936,6 +1950,7 @@ camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
 camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o: /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h

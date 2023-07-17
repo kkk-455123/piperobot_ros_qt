@@ -120,6 +120,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwind
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractproxymodel.h
@@ -130,6 +131,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwind
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -200,6 +202,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_mainwind
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h
@@ -501,6 +504,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cp
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractproxymodel.h
@@ -511,6 +515,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cp
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -581,6 +586,7 @@ camera_display/CMakeFiles/camera_display.dir/include/camera_display/moc_qnode.cp
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h
@@ -1043,6 +1049,7 @@ camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractproxymodel.h
@@ -1053,6 +1060,7 @@ camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -1125,6 +1133,7 @@ camera_display/CMakeFiles/camera_display.dir/src/main.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h
@@ -1431,6 +1440,7 @@ camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QVariant
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
@@ -1442,6 +1452,7 @@ camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -1515,6 +1526,7 @@ camera_display/CMakeFiles/camera_display.dir/src/mainwindow.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h
@@ -1857,6 +1869,7 @@ camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStorageInfo
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QStringListModel
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QThread
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractitemmodel.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qabstractproxymodel.h
@@ -1867,6 +1880,7 @@ camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_cxx11.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qatomic_msvc.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasicatomic.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearraylist.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qchar.h
@@ -1937,6 +1951,7 @@ camera_display/CMakeFiles/camera_display.dir/src/qnode.cpp.o
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtcore-config.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtextstream.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
+ /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
  /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurlquery.h

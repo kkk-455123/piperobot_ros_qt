@@ -16,5 +16,7 @@
         <file>images/视频.png</file>
         <file>images/robot2.png</file>
         <file>images/robot3.png</file>
+        <file>images/未连接.png</file>
+        <file>images/已连接.png</file>
     </qresource>
 </RCC>

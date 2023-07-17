@@ -46,6 +46,10 @@ qstringlistmodel.h
 qthread.h
 /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qthread.h
 
+/home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QTimer
+qtimer.h
+/home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
+
 /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/QUrl
 qurl.h
 /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qurl.h
@@ -108,6 +112,12 @@ QtCore/qatomic_bootstrap.h
 QtCore/qatomic_cxx11.h
 -
 QtCore/qatomic_msvc.h
+-
+
+/home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbasictimer.h
+QtCore/qglobal.h
+-
+QtCore/qnamespace.h
 -
 
 /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qbytearray.h
@@ -808,6 +818,16 @@ QtCore/qdeadlinetimer.h
 future
 -
 functional
+-
+
+/home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtimer.h
+QtCore/qglobal.h
+-
+QtCore/qbasictimer.h
+-
+QtCore/qobject.h
+-
+chrono
 -
 
 /home/piperobot/Qt/5.15.2/gcc_64/include/QtCore/qtypeinfo.h
@@ -1812,26 +1832,6 @@ QtGui/qkeysequence.h
 QtGui/qevent.h
 -
 
-/home/piperobot/piperobot/build/camera_display/include/camera_display/moc_mainwindow.cpp
-memory
--
-../../../../src/camera_display/include/camera_display/mainwindow.h
-/home/piperobot/piperobot/src/camera_display/include/camera_display/mainwindow.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/home/piperobot/piperobot/build/camera_display/include/camera_display/moc_qnode.cpp
-memory
--
-../../../../src/camera_display/include/camera_display/qnode.h
-/home/piperobot/piperobot/src/camera_display/include/camera_display/qnode.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
 /home/piperobot/piperobot/src/camera_display/include/camera_display/dialog.h
 QDialog
 -
@@ -1856,6 +1856,8 @@ QComboBox
 QSpinBox
 -
 QMessageBox
+-
+QTimer
 -
 QSqlDatabase
 -
@@ -1924,34 +1926,12 @@ opencv2/highgui/highgui.hpp
 mainwindow.h
 /home/piperobot/piperobot/src/camera_display/include/camera_display/mainwindow.h
 
-/home/piperobot/piperobot/src/camera_display/src/main.cpp
-../include/camera_display/mainwindow.h
-/home/piperobot/piperobot/src/camera_display/include/camera_display/mainwindow.h
-QApplication
--
-
 /home/piperobot/piperobot/src/camera_display/src/mainwindow.cpp
 ../include/camera_display/mainwindow.h
 /home/piperobot/piperobot/src/camera_display/include/camera_display/mainwindow.h
 ui_mainwindow.h
 /home/piperobot/piperobot/src/camera_display/src/ui_mainwindow.h
 fstream
--
-
-/home/piperobot/piperobot/src/camera_display/src/qnode.cpp
-ros/ros.h
--
-ros/network.h
--
-string
--
-sstream
--
-../include/camera_display/qnode.h
-/home/piperobot/piperobot/src/camera_display/include/camera_display/qnode.h
-fstream
--
-chrono
 -
 
 /opt/ros/noetic/include/cv_bridge/cv_bridge.h
@@ -2289,12 +2269,6 @@ boost/type_traits/remove_reference.hpp
 -
 
 /opt/ros/noetic/include/ros/names.h
-forwards.h
-/opt/ros/noetic/include/ros/forwards.h
-common.h
-/opt/ros/noetic/include/ros/common.h
-
-/opt/ros/noetic/include/ros/network.h
 forwards.h
 /opt/ros/noetic/include/ros/forwards.h
 common.h

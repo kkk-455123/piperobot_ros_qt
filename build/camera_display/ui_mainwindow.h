@@ -111,21 +111,21 @@ public:
     QLabel *label_2;
     QFrame *frame;
     QGridLayout *gridLayout_8;
+    QPushButton *pushButton_finish;
+    QPushButton *pushButton_start;
+    QPushButton *pushButton_quit;
     QPushButton *pushButton_connect;
     QFrame *frame_2;
     QHBoxLayout *horizontalLayout_7;
     QLabel *label_3;
     QLabel *label_connect;
-    QPushButton *pushButton_quit;
-    QPushButton *pushButton_finish;
     QFrame *frame_3;
     QGridLayout *gridLayout_5;
     QPushButton *pushButton_location;
-    QPushButton *pushButton_front;
     QPushButton *pushButton_behind;
-    QPushButton *pushButton_2;
+    QPushButton *pushButton_front;
     QPushButton *pushButton;
-    QPushButton *pushButton_8;
+    QPushButton *pushButton_sonar;
     QWidget *mysql;
     QGridLayout *gridLayout_6;
     QPushButton *pushButton_back;
@@ -135,9 +135,7 @@ public:
     QLabel *label_title;
     QMenuBar *menubar;
     QMenu *menu;
-    QMenu *menu_2;
     QMenu *menu_3;
-    QMenu *menu_4;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -556,6 +554,25 @@ public:
         frame->setFrameShadow(QFrame::Raised);
         gridLayout_8 = new QGridLayout(frame);
         gridLayout_8->setObjectName(QString::fromUtf8("gridLayout_8"));
+        pushButton_finish = new QPushButton(frame);
+        pushButton_finish->setObjectName(QString::fromUtf8("pushButton_finish"));
+        pushButton_finish->setEnabled(false);
+        pushButton_finish->setMinimumSize(QSize(0, 40));
+
+        gridLayout_8->addWidget(pushButton_finish, 1, 1, 1, 1);
+
+        pushButton_start = new QPushButton(frame);
+        pushButton_start->setObjectName(QString::fromUtf8("pushButton_start"));
+        pushButton_start->setMinimumSize(QSize(0, 40));
+
+        gridLayout_8->addWidget(pushButton_start, 1, 0, 1, 1);
+
+        pushButton_quit = new QPushButton(frame);
+        pushButton_quit->setObjectName(QString::fromUtf8("pushButton_quit"));
+        pushButton_quit->setMinimumSize(QSize(0, 40));
+
+        gridLayout_8->addWidget(pushButton_quit, 2, 1, 1, 1);
+
         pushButton_connect = new QPushButton(frame);
         pushButton_connect->setObjectName(QString::fromUtf8("pushButton_connect"));
         QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Fixed);
@@ -566,7 +583,7 @@ public:
         pushButton_connect->setMinimumSize(QSize(0, 40));
         pushButton_connect->setMaximumSize(QSize(16777215, 16777215));
 
-        gridLayout_8->addWidget(pushButton_connect, 1, 0, 1, 1);
+        gridLayout_8->addWidget(pushButton_connect, 2, 0, 1, 1);
 
         frame_2 = new QFrame(frame);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
@@ -579,8 +596,7 @@ public:
         QFont font4;
         font4.setPointSize(11);
         frame_2->setFont(font4);
-        frame_2->setStyleSheet(QString::fromUtf8("background-color: rgb(239, 41, 41);\n"
-"color: rgb(255, 255, 255);"));
+        frame_2->setStyleSheet(QString::fromUtf8(""));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
         horizontalLayout_7 = new QHBoxLayout(frame_2);
@@ -593,24 +609,15 @@ public:
 
         label_connect = new QLabel(frame_2);
         label_connect->setObjectName(QString::fromUtf8("label_connect"));
+        label_connect->setMaximumSize(QSize(20, 20));
+        label_connect->setPixmap(QPixmap(QString::fromUtf8(":/icon/images/\346\234\252\350\277\236\346\216\245.png")));
+        label_connect->setScaledContents(true);
         label_connect->setAlignment(Qt::AlignCenter);
 
         horizontalLayout_7->addWidget(label_connect);
 
 
         gridLayout_8->addWidget(frame_2, 0, 0, 1, 2);
-
-        pushButton_quit = new QPushButton(frame);
-        pushButton_quit->setObjectName(QString::fromUtf8("pushButton_quit"));
-        pushButton_quit->setMinimumSize(QSize(0, 40));
-
-        gridLayout_8->addWidget(pushButton_quit, 1, 1, 1, 1);
-
-        pushButton_finish = new QPushButton(frame);
-        pushButton_finish->setObjectName(QString::fromUtf8("pushButton_finish"));
-        pushButton_finish->setMinimumSize(QSize(0, 40));
-
-        gridLayout_8->addWidget(pushButton_finish, 2, 0, 1, 2);
 
 
         gridLayout_4->addWidget(frame, 6, 0, 1, 1);
@@ -631,21 +638,7 @@ public:
         pushButton_location->setAutoDefault(false);
         pushButton_location->setFlat(false);
 
-        gridLayout_5->addWidget(pushButton_location, 5, 1, 1, 2);
-
-        pushButton_front = new QPushButton(frame_3);
-        pushButton_front->setObjectName(QString::fromUtf8("pushButton_front"));
-        sizePolicy1.setHeightForWidth(pushButton_front->sizePolicy().hasHeightForWidth());
-        pushButton_front->setSizePolicy(sizePolicy1);
-        pushButton_front->setMinimumSize(QSize(0, 0));
-        pushButton_front->setMaximumSize(QSize(200, 10000));
-        QIcon icon6;
-        icon6.addFile(QString::fromUtf8(":/icon/images/front.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_front->setIcon(icon6);
-        pushButton_front->setIconSize(QSize(48, 48));
-        pushButton_front->setFlat(false);
-
-        gridLayout_5->addWidget(pushButton_front, 0, 1, 1, 2);
+        gridLayout_5->addWidget(pushButton_location, 4, 1, 1, 2);
 
         pushButton_behind = new QPushButton(frame_3);
         pushButton_behind->setObjectName(QString::fromUtf8("pushButton_behind"));
@@ -654,49 +647,51 @@ public:
         pushButton_behind->setMinimumSize(QSize(0, 0));
         pushButton_behind->setMaximumSize(QSize(200, 100000));
         pushButton_behind->setLayoutDirection(Qt::LeftToRight);
-        QIcon icon7;
-        icon7.addFile(QString::fromUtf8(":/icon/images/behind.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_behind->setIcon(icon7);
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8(":/icon/images/behind.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_behind->setIcon(icon6);
         pushButton_behind->setIconSize(QSize(48, 48));
         pushButton_behind->setFlat(false);
 
         gridLayout_5->addWidget(pushButton_behind, 1, 1, 1, 2);
 
-        pushButton_2 = new QPushButton(frame_3);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        sizePolicy1.setHeightForWidth(pushButton_2->sizePolicy().hasHeightForWidth());
-        pushButton_2->setSizePolicy(sizePolicy1);
-        QIcon icon8;
-        icon8.addFile(QString::fromUtf8(":/icon/images/hand.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_2->setIcon(icon8);
-        pushButton_2->setIconSize(QSize(48, 48));
-        pushButton_2->setFlat(false);
+        pushButton_front = new QPushButton(frame_3);
+        pushButton_front->setObjectName(QString::fromUtf8("pushButton_front"));
+        sizePolicy1.setHeightForWidth(pushButton_front->sizePolicy().hasHeightForWidth());
+        pushButton_front->setSizePolicy(sizePolicy1);
+        pushButton_front->setMinimumSize(QSize(0, 0));
+        pushButton_front->setMaximumSize(QSize(200, 10000));
+        QIcon icon7;
+        icon7.addFile(QString::fromUtf8(":/icon/images/front.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_front->setIcon(icon7);
+        pushButton_front->setIconSize(QSize(48, 48));
+        pushButton_front->setFlat(false);
 
-        gridLayout_5->addWidget(pushButton_2, 4, 1, 1, 2);
+        gridLayout_5->addWidget(pushButton_front, 0, 1, 1, 2);
 
         pushButton = new QPushButton(frame_3);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         sizePolicy1.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
         pushButton->setSizePolicy(sizePolicy1);
-        QIcon icon9;
-        icon9.addFile(QString::fromUtf8(":/icon/images/auto.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon9);
+        QIcon icon8;
+        icon8.addFile(QString::fromUtf8(":/icon/images/auto.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton->setIcon(icon8);
         pushButton->setIconSize(QSize(48, 48));
         pushButton->setFlat(false);
 
         gridLayout_5->addWidget(pushButton, 3, 1, 1, 2);
 
-        pushButton_8 = new QPushButton(frame_3);
-        pushButton_8->setObjectName(QString::fromUtf8("pushButton_8"));
-        sizePolicy1.setHeightForWidth(pushButton_8->sizePolicy().hasHeightForWidth());
-        pushButton_8->setSizePolicy(sizePolicy1);
-        QIcon icon10;
-        icon10.addFile(QString::fromUtf8(":/icon/images/\345\243\260\346\263\242.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_8->setIcon(icon10);
-        pushButton_8->setIconSize(QSize(48, 48));
-        pushButton_8->setAutoDefault(false);
+        pushButton_sonar = new QPushButton(frame_3);
+        pushButton_sonar->setObjectName(QString::fromUtf8("pushButton_sonar"));
+        sizePolicy1.setHeightForWidth(pushButton_sonar->sizePolicy().hasHeightForWidth());
+        pushButton_sonar->setSizePolicy(sizePolicy1);
+        QIcon icon9;
+        icon9.addFile(QString::fromUtf8(":/icon/images/\345\243\260\346\263\242.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_sonar->setIcon(icon9);
+        pushButton_sonar->setIconSize(QSize(48, 48));
+        pushButton_sonar->setAutoDefault(false);
 
-        gridLayout_5->addWidget(pushButton_8, 6, 1, 1, 2);
+        gridLayout_5->addWidget(pushButton_sonar, 5, 1, 1, 2);
 
 
         gridLayout_4->addWidget(frame_3, 0, 0, 1, 1);
@@ -776,24 +771,16 @@ public:
         menubar->setDefaultUp(false);
         menu = new QMenu(menubar);
         menu->setObjectName(QString::fromUtf8("menu"));
-        menu_2 = new QMenu(menubar);
-        menu_2->setObjectName(QString::fromUtf8("menu_2"));
         menu_3 = new QMenu(menubar);
         menu_3->setObjectName(QString::fromUtf8("menu_3"));
-        menu_4 = new QMenu(menubar);
-        menu_4->setObjectName(QString::fromUtf8("menu_4"));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
 
         menubar->addAction(menu->menuAction());
-        menubar->addAction(menu_2->menuAction());
         menubar->addAction(menu_3->menuAction());
-        menubar->addAction(menu_4->menuAction());
         menu->addAction(action_13);
-        menu_2->addAction(action);
-        menu_2->addAction(action_2);
         menu_3->addSeparator();
         menu_3->addAction(action_3);
         menu_3->addSeparator();
@@ -801,11 +788,6 @@ public:
         menu_3->addSeparator();
         menu_3->addAction(action_5);
         menu_3->addSeparator();
-        menu_4->addSeparator();
-        menu_4->addAction(action_8);
-        menu_4->addSeparator();
-        menu_4->addAction(action_7);
-        menu_4->addSeparator();
 
         retranslateUi(MainWindow);
 
@@ -816,11 +798,10 @@ public:
         pushButton_utrans->setDefault(true);
         pushButton_upload->setDefault(true);
         pushButton_location->setDefault(true);
-        pushButton_front->setDefault(true);
         pushButton_behind->setDefault(true);
-        pushButton_2->setDefault(true);
+        pushButton_front->setDefault(true);
         pushButton->setDefault(true);
-        pushButton_8->setDefault(true);
+        pushButton_sonar->setDefault(true);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -875,17 +856,17 @@ public:
         label_7->setText(QCoreApplication::translate("MainWindow", "0m", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "\345\267\246\345\200\276 0.0\302\260", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "\345\217\263\345\200\276 -0.0\302\260", nullptr));
+        pushButton_finish->setText(QCoreApplication::translate("MainWindow", "\346\243\200\346\265\213\345\256\214\346\257\225", nullptr));
+        pushButton_start->setText(QCoreApplication::translate("MainWindow", "\345\274\200\345\247\213\346\243\200\346\265\213", nullptr));
+        pushButton_quit->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272", nullptr));
         pushButton_connect->setText(QCoreApplication::translate("MainWindow", "\350\277\236\346\216\245", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "\347\263\273\347\273\237\347\212\266\346\200\201", nullptr));
-        label_connect->setText(QCoreApplication::translate("MainWindow", "\346\234\252\350\277\236\346\216\245", nullptr));
-        pushButton_quit->setText(QCoreApplication::translate("MainWindow", "\351\200\200\345\207\272", nullptr));
-        pushButton_finish->setText(QCoreApplication::translate("MainWindow", "\346\243\200\346\265\213\345\256\214\346\257\225", nullptr));
+        label_connect->setText(QString());
         pushButton_location->setText(QCoreApplication::translate("MainWindow", "\345\256\232\344\275\215\344\277\241\346\201\257", nullptr));
-        pushButton_front->setText(QCoreApplication::translate("MainWindow", "\345\211\215\347\275\256\344\272\221\345\217\260", nullptr));
         pushButton_behind->setText(QCoreApplication::translate("MainWindow", "\345\200\222\350\275\246\345\275\261\345\203\217", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "\346\211\213\345\212\250\346\224\266\347\272\277", nullptr));
+        pushButton_front->setText(QCoreApplication::translate("MainWindow", "\345\211\215\347\275\256\344\272\221\345\217\260", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\350\207\252\345\212\250\346\224\266\347\272\277", nullptr));
-        pushButton_8->setText(QCoreApplication::translate("MainWindow", "\345\243\260\347\272\263\346\243\200\346\265\213", nullptr));
+        pushButton_sonar->setText(QCoreApplication::translate("MainWindow", "\345\243\260\347\272\263\346\243\200\346\265\213", nullptr));
         pushButton_back->setText(QCoreApplication::translate("MainWindow", "\350\277\224\345\233\236", nullptr));
         pushButton_video->setText(QCoreApplication::translate("MainWindow", "\346\234\254\345\234\260\350\247\206\351\242\221", nullptr));
         label_title->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-size:20pt; font-weight:600;\">\347\256\241\351\201\223\346\243\200\346\265\213\346\234\272\345\231\250\344\272\272\345\234\260\351\235\242\346\224\257\346\214\201\347\263\273\347\273\237</span></p></body></html>", nullptr));
@@ -893,9 +874,7 @@ public:
         menubar->setWhatsThis(QString());
 #endif // QT_CONFIG(whatsthis)
         menu->setTitle(QCoreApplication::translate("MainWindow", "\347\263\273\347\273\237\350\256\276\347\275\256", nullptr));
-        menu_2->setTitle(QCoreApplication::translate("MainWindow", "\346\243\200\346\265\213\344\277\241\346\201\257", nullptr));
         menu_3->setTitle(QCoreApplication::translate("MainWindow", "\350\247\206\345\233\276\345\210\207\346\215\242", nullptr));
-        menu_4->setTitle(QCoreApplication::translate("MainWindow", "\346\225\260\346\215\256\345\257\274\345\207\272", nullptr));
     } // retranslateUi
 
 };

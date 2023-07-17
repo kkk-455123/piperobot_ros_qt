@@ -705,7 +705,49 @@ border-color: rgb(114, 159, 207);</string>
                 <enum>QFrame::Raised</enum>
                </property>
                <layout class="QGridLayout" name="gridLayout_8">
+                <item row="1" column="1">
+                 <widget class="QPushButton" name="pushButton_finish">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>检测完毕</string>
+                  </property>
+                 </widget>
+                </item>
                 <item row="1" column="0">
+                 <widget class="QPushButton" name="pushButton_start">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>开始检测</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QPushButton" name="pushButton_quit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>退出</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
                  <widget class="QPushButton" name="pushButton_connect">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -750,8 +792,7 @@ border-color: rgb(114, 159, 207);</string>
                    </font>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-color: rgb(239, 41, 41);
-color: rgb(255, 255, 255);</string>
+                   <string notr="true"/>
                   </property>
                   <property name="frameShape">
                    <enum>QFrame::StyledPanel</enum>
@@ -772,8 +813,20 @@ color: rgb(255, 255, 255);</string>
                    </item>
                    <item>
                     <widget class="QLabel" name="label_connect">
+                     <property name="maximumSize">
+                      <size>
+                       <width>20</width>
+                       <height>20</height>
+                      </size>
+                     </property>
                      <property name="text">
-                      <string>未连接</string>
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap resource="../resources/images.qrc">:/icon/images/未连接.png</pixmap>
+                     </property>
+                     <property name="scaledContents">
+                      <bool>true</bool>
                      </property>
                      <property name="alignment">
                       <set>Qt::AlignCenter</set>
@@ -781,32 +834,6 @@ color: rgb(255, 255, 255);</string>
                     </widget>
                    </item>
                   </layout>
-                 </widget>
-                </item>
-                <item row="1" column="1">
-                 <widget class="QPushButton" name="pushButton_quit">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>退出</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="0" colspan="2">
-                 <widget class="QPushButton" name="pushButton_finish">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>检测完毕</string>
-                  </property>
                  </widget>
                 </item>
                </layout>
@@ -820,7 +847,7 @@ color: rgb(255, 255, 255);</string>
                 </font>
                </property>
                <layout class="QGridLayout" name="gridLayout_5">
-                <item row="5" column="1" colspan="2">
+                <item row="4" column="1" colspan="2">
                  <widget class="QPushButton" name="pushButton_location">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
@@ -843,47 +870,6 @@ color: rgb(255, 255, 255);</string>
                   </property>
                   <property name="autoDefault">
                    <bool>false</bool>
-                  </property>
-                  <property name="default">
-                   <bool>true</bool>
-                  </property>
-                  <property name="flat">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="1" colspan="2">
-                 <widget class="QPushButton" name="pushButton_front">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>200</width>
-                    <height>10000</height>
-                   </size>
-                  </property>
-                  <property name="text">
-                   <string>前置云台</string>
-                  </property>
-                  <property name="icon">
-                   <iconset resource="../resources/images.qrc">
-                    <normaloff>:/icon/images/front.png</normaloff>:/icon/images/front.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>48</width>
-                    <height>48</height>
-                   </size>
                   </property>
                   <property name="default">
                    <bool>true</bool>
@@ -937,20 +923,32 @@ color: rgb(255, 255, 255);</string>
                   </property>
                  </widget>
                 </item>
-                <item row="4" column="1" colspan="2">
-                 <widget class="QPushButton" name="pushButton_2">
+                <item row="0" column="1" colspan="2">
+                 <widget class="QPushButton" name="pushButton_front">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
                     <horstretch>0</horstretch>
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>200</width>
+                    <height>10000</height>
+                   </size>
+                  </property>
                   <property name="text">
-                   <string>手动收线</string>
+                   <string>前置云台</string>
                   </property>
                   <property name="icon">
                    <iconset resource="../resources/images.qrc">
-                    <normaloff>:/icon/images/hand.png</normaloff>:/icon/images/hand.png</iconset>
+                    <normaloff>:/icon/images/front.png</normaloff>:/icon/images/front.png</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -995,8 +993,8 @@ color: rgb(255, 255, 255);</string>
                   </property>
                  </widget>
                 </item>
-                <item row="6" column="1" colspan="2">
-                 <widget class="QPushButton" name="pushButton_8">
+                <item row="5" column="1" colspan="2">
+                 <widget class="QPushButton" name="pushButton_sonar">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
                     <horstretch>0</horstretch>
@@ -1184,13 +1182,6 @@ color: rgb(255, 255, 255);</string>
     </property>
     <addaction name="action_13"/>
    </widget>
-   <widget class="QMenu" name="menu_2">
-    <property name="title">
-     <string>检测信息</string>
-    </property>
-    <addaction name="action"/>
-    <addaction name="action_2"/>
-   </widget>
    <widget class="QMenu" name="menu_3">
     <property name="title">
      <string>视图切换</string>
@@ -1203,20 +1194,8 @@ color: rgb(255, 255, 255);</string>
     <addaction name="action_5"/>
     <addaction name="separator"/>
    </widget>
-   <widget class="QMenu" name="menu_4">
-    <property name="title">
-     <string>数据导出</string>
-    </property>
-    <addaction name="separator"/>
-    <addaction name="action_8"/>
-    <addaction name="separator"/>
-    <addaction name="action_7"/>
-    <addaction name="separator"/>
-   </widget>
    <addaction name="menu"/>
-   <addaction name="menu_2"/>
    <addaction name="menu_3"/>
-   <addaction name="menu_4"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action">

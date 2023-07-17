@@ -73,6 +73,8 @@ camera_display/qrc_images.cpp: /home/piperobot/piperobot/src/camera_display/reso
 camera_display/qrc_images.cpp: /home/piperobot/piperobot/src/camera_display/resources/images/视频.png
 camera_display/qrc_images.cpp: /home/piperobot/piperobot/src/camera_display/resources/images/robot2.png
 camera_display/qrc_images.cpp: /home/piperobot/piperobot/src/camera_display/resources/images/robot3.png
+camera_display/qrc_images.cpp: /home/piperobot/piperobot/src/camera_display/resources/images/未连接.png
+camera_display/qrc_images.cpp: /home/piperobot/piperobot/src/camera_display/resources/images/已连接.png
 camera_display/qrc_images.cpp: camera_display/resources/images.qrc.depends
 camera_display/qrc_images.cpp: /home/piperobot/piperobot/src/camera_display/resources/images.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/piperobot/piperobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating qrc_images.cpp"

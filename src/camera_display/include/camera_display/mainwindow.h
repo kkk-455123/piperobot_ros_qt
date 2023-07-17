@@ -7,6 +7,7 @@
 #include <QComboBox>
 #include <QSpinBox>
 #include <QMessageBox>  // 提示信息
+#include <QTimer>
 
 // sql相关
 #include <QSqlDatabase>
@@ -15,10 +16,12 @@
 #include <QSqlError>
 #include <QSortFilterProxyModel> 
 
+// C++库
 #include <iostream>
 #include <memory>
 #include <string>
 
+// 系统/文件操作相关
 #include <QDir>
 #include <QUrl>
 #include <QDesktopServices>
@@ -84,6 +87,8 @@ private slots:
     void on_pushButton_utrans_clicked();
     void on_pushButton_upload_clicked();
     void on_pushButton_finish_clicked();
+    void on_pushButton_start_clicked();
+    void on_pushButton_sonar_clicked();
 
     /******************************************
     ** Manual connections
@@ -91,11 +96,16 @@ private slots:
     void trigerMenu(QAction* act);
     void handleDataModified(const std::unordered_map<std::string, std::string>& modifiedData);
     void onHeaderClicked(int logicalIndex);  // 表头点击事件
+    void labelConnectUpdate();  // 指示灯状态更新
+
 private:
     Ui::MainWindow *ui;
     // camera_display::QNode qnode;
     std::unique_ptr<camera_display::QNode> qnode;
     std::unique_ptr<Dialog> configWindow;  // unique指针存放信息登记窗口资源
+    QTimer *timer = new QTimer(this);
+    // std::unique_ptr<QProgressDialog> progressDialog;  // 使用指针成员变量，用于验证局部对象进度条对话框是不是因为执行速度过快，跳出作用域导致其生命周期结束，所以没有及时显示
+    QProgressDialog* progressDialog;
     
     QSqlDatabase db;  // mysql数据库
     std::unique_ptr<QSqlQueryModel> model;
@@ -106,14 +116,23 @@ private:
     QString videoFolder;
     QString videoName;
 
+    // 记录系统运行状态 isRun && isInput -> isDisplay -> isSave
+    struct sysState {
+        bool isRun;
+        bool isInput;
+        bool isDisplay;
+        bool isSave;
+    } sysStat;
+
+    void Init();
+    void UiInit();
+    void ConnInit();
     bool mysqlInit();
     void updateDatabase(const std::unordered_map<std::string, std::string>& modifiedData, const QString&& tableName);
     // 数据导出功能
     QString getUSBFolderPath();
     void copyToUSB();
     // void copyDirectory(const QDir& sourceDir, const QDir& targetDir);  
-    // std::unique_ptr<QProgressDialog> progressDialog;  // 使用指针成员变量，用于验证进度条对话框是不是因为执行速度过快，跳出作用域，导致其生命周期结束，所以没有及时显示
-    QProgressDialog* progressDialog;
 };
 
 // 自定义的后台线程类

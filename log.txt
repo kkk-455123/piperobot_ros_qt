@@ -149,3 +149,62 @@ sql语句执行成功	Mon Jul 10 20:41:31 2023
 SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-06-28 AND 任务编号 = 中山村路非开挖修复	Mon Jul 10 20:41:31 2023
 数据不存在, 插入	Mon Jul 10 20:41:31 2023
 更新成功	Mon Jul 10 20:41:31 2023
+系统启动	Tue Jul 11 17:45:26 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Tue Jul 11 17:45:26 2023
+系统启动	Tue Jul 11 17:46:01 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Tue Jul 11 17:46:01 2023
+系统启动	Tue Jul 11 18:41:07 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Tue Jul 11 18:41:07 2023
+系统启动	Tue Jul 11 18:41:56 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Tue Jul 11 18:41:56 2023
+系统启动	Tue Jul 11 18:43:31 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Tue Jul 11 18:43:31 2023
+系统启动	Wed Jul 12 10:46:32 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Wed Jul 12 10:46:32 2023
+信息录入	Wed Jul 12 10:48:19 2023
+更新数据	Wed Jul 12 10:48:29 2023
+sql语句执行成功	Wed Jul 12 10:48:29 2023
+表的行数：0	Wed Jul 12 10:48:29 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-06-16 AND 任务编号 = 中山村路非开挖修复	Wed Jul 12 10:48:29 2023
+数据不存在, 插入	Wed Jul 12 10:48:29 2023
+更新成功	Wed Jul 12 10:48:29 2023
+系统启动	Sun Jul 16 17:00:30 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Sun Jul 16 17:00:31 2023
+copy to USB	Sun Jul 16 17:00:44 2023
+U盘路径：/media/piperobot/Ubuntu 20.0	Sun Jul 16 17:00:45 2023
+系统启动	Sun Jul 16 17:03:21 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Sun Jul 16 17:03:21 2023
+copy to USB	Sun Jul 16 17:03:24 2023
+U盘路径：/media/piperobot/Ubuntu 20.0	Sun Jul 16 17:03:24 2023
+系统启动	Sun Jul 16 17:04:29 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Sun Jul 16 17:04:29 2023
+系统启动	Mon Jul 17 11:34:28 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 17 11:34:28 2023
+信息录入	Mon Jul 17 11:35:11 2023
+更新数据	Mon Jul 17 11:35:28 2023
+sql语句执行成功	Mon Jul 17 11:35:28 2023
+表的行数：0	Mon Jul 17 11:35:28 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-01-01 AND 任务编号 = 中山村路非开挖修复	Mon Jul 17 11:35:28 2023
+数据不存在, 插入	Mon Jul 17 11:35:28 2023
+更新成功	Mon Jul 17 11:35:28 2023
+信息录入	Mon Jul 17 11:38:23 2023
+更新数据	Mon Jul 17 11:38:33 2023
+sql语句执行成功	Mon Jul 17 11:38:33 2023
+表的行数：0	Mon Jul 17 11:38:33 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-03-01 AND 任务编号 = 中山村路非开挖修复	Mon Jul 17 11:38:33 2023
+数据不存在, 插入	Mon Jul 17 11:38:33 2023
+更新成功	Mon Jul 17 11:38:33 2023
+copy to USB	Mon Jul 17 11:39:16 2023
+U盘路径：/media/piperobot/Ubuntu 20.0	Mon Jul 17 11:39:16 2023
+系统启动	Mon Jul 17 15:16:14 2023
+Current Path: /home/piperobot/piperobot/src/camera_display/resources/images	Mon Jul 17 15:16:15 2023
+系统启动	Mon Jul 17 16:30:33 2023
+系统启动	Mon Jul 17 16:33:46 2023
+信息录入	Mon Jul 17 16:34:11 2023
+更新数据	Mon Jul 17 16:34:25 2023
+sql语句执行成功	Mon Jul 17 16:34:25 2023
+表的行数：0	Mon Jul 17 16:34:25 2023
+SQL: SELECT 任务编号 FROM tasks WHERE 检测日期 = 2023-02-01 AND 任务编号 = 中山村路非开挖修复	Mon Jul 17 16:34:25 2023
+数据不存在, 插入	Mon Jul 17 16:34:25 2023
+更新成功	Mon Jul 17 16:34:25 2023
+系统启动	Mon Jul 17 16:49:53 2023

@@ -41,7 +41,8 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
     // , qnode(argc, argv, this)
     , qnode(new camera_display::QNode(argc, argv, this))
     , configWindow(new Dialog(this))
-    , isRunFlag(false), isInput(false)
+    // , isRunFlag(false), isInput(false)
+    , sysStat({NULL})
     , db(QSqlDatabase::addDatabase("QMYSQL"))
     , model(new QSqlQueryModel)
     , proxyModel(new QSortFilterProxyModel(this))
@@ -50,26 +51,41 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
 {
     MyDebug("系统启动");
     ui->setupUi(this);
+    Init();
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+void MainWindow::Init() {
+    UiInit();  // ui初始化
     mysqlInit();  // 初始化数据库连接
+    ConnInit();  // 信号槽连接
+}
 
-    // connect
-    connect(qnode.get(), SIGNAL(rosShutdown()), this, SLOT(close()));  // 接收qnode
-    connect(qnode.get(),SIGNAL(image_val(QImage)),this,SLOT(slot_update_image(QImage)));
-//    connect(&qnode,SIGNAL(position(double,double,double)),this,SLOT(slot_update_pos(double,double,double)));
-    // connect(ui->pushButton_front, SIGNAL(clicked()),this,SLOT(slot_sub_image("pushButton_front")));
-    // connect(ui->pushButton_behind, SIGNAL(clicked()),this,SLOT(slot_sub_image("ppushButton_behind")));
-    connect(ui->pushButton_front, SIGNAL(clicked()),this,SLOT(slot_sub_image_front()));
-    connect(ui->pushButton_behind, SIGNAL(clicked()),this,SLOT(slot_sub_image_behind()));
-    // ui->label_image->setText("等待视频图像数据...");
+void MainWindow::UiInit() {
+    // 设置按钮点击属性
+    ui->pushButton_start->setEnabled(true);
+    ui->pushButton_finish->setEnabled(false);
 
-    connect(ui->menubar,SIGNAL(triggered(QAction*)),this,SLOT(trigerMenu(QAction*)));  // 菜单设置触发
-    connect(configWindow.get(), SIGNAL(dataModified(const std::unordered_map<std::string, std::string>&)), this, SLOT(handleDataModified(const std::unordered_map<std::string, std::string>&)));  // 信息登记窗口信号接收-槽函数调用
+    // 设置标签显示图片
+    // 获取到图片目录
+    QDir dir(qApp->applicationDirPath());
+    // MyDebug("Current Path: " + dir.absolutePath().toStdString());
+    dir.cd("../../../src/camera_display/resources/images");
+    // MyDebug("Current Path: " + dir.absolutePath().toStdString());
+    // 构建pixmap
+    QPixmap pixmap(dir.absoluteFilePath("robot3.png"));
+    // 设置pixmap比例
+    int labelH = ui->label_image->height() + 500;
+    int labelW = int(pixmap.width() * labelH / pixmap.height());
+    QSize size(labelW, labelH);  // 高为label的高，宽通过比例计算，要保持图片原比例
+    pixmap = pixmap.scaled(size);
+    // 将pixmap设置到label
+    ui->label_image->setPixmap(pixmap);
 
-    // 获取表格的 horizontalHeader
-    QHeaderView* header = ui->tableView->horizontalHeader();
-    // 连接 sectionClicked 信号到自定义槽函数
-    QObject::connect(header, &QHeaderView::sectionClicked, this, &MainWindow::onHeaderClicked);
-    
     // // 创建 QStackedWidget
     // QStackedWidget *stackedWidget = new QStackedWidget(this);
 
@@ -96,28 +112,28 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
     // setCentralWidget(stackedWidget);
     // // 将标签设置为窗口的中心部件
     // setCentralWidget(ui->label_image);
-
-    // 获取到图片目录
-    QDir dir(qApp->applicationDirPath());
-    // MyDebug("Current Path: " + dir.absolutePath().toStdString());
-    dir.cd("../../../src/camera_display/resources/images");
-    MyDebug("Current Path: " + dir.absolutePath().toStdString());
-    // 构建pixmap
-    QPixmap pixmap(dir.absoluteFilePath("robot3.png"));
-    
-    // // 设置pixmap比例
-    int labelH = ui->label_image->height() + 500;
-    int labelW = int(pixmap.width() * labelH / pixmap.height());
-    QSize size(labelW, labelH);  // 高为label的高，宽通过比例计算，要保持图片原比例
-    pixmap = pixmap.scaled(size);
-    // // 将pixmap设置到label
-    ui->label_image->setPixmap(pixmap);
-    
 }
+ 
+void MainWindow::ConnInit() {
+    // connect
+    connect(qnode.get(), SIGNAL(rosShutdown()), this, SLOT(close()));  // 接收qnode
+    connect(qnode.get(),SIGNAL(image_val(QImage)),this,SLOT(slot_update_image(QImage)));
+//    connect(&qnode,SIGNAL(position(double,double,double)),this,SLOT(slot_update_pos(double,double,double)));
+    // connect(ui->pushButton_front, SIGNAL(clicked()),this,SLOT(slot_sub_image("pushButton_front")));
+    // connect(ui->pushButton_behind, SIGNAL(clicked()),this,SLOT(slot_sub_image("ppushButton_behind")));
+    connect(ui->pushButton_front, SIGNAL(clicked()),this,SLOT(slot_sub_image_front()));
+    connect(ui->pushButton_behind, SIGNAL(clicked()),this,SLOT(slot_sub_image_behind()));
+    // ui->label_image->setText("等待视频图像数据...");
 
-MainWindow::~MainWindow()
-{
-    delete ui;
+    connect(ui->menubar,SIGNAL(triggered(QAction*)),this,SLOT(trigerMenu(QAction*)));  // 菜单设置触发
+    connect(configWindow.get(), SIGNAL(dataModified(const std::unordered_map<std::string, std::string>&)), this, SLOT(handleDataModified(const std::unordered_map<std::string, std::string>&)));  // 信息登记窗口信号接收-槽函数调用
+    connect(this->timer, SIGNAL(timeout()), this, SLOT(labelConnectUpdate()));
+    timer->start(1000);
+
+    // 获取表格的 horizontalHeader
+    QHeaderView* header = ui->tableView->horizontalHeader();
+    // 连接 sectionClicked 信号到自定义槽函数
+    QObject::connect(header, &QHeaderView::sectionClicked, this, &MainWindow::onHeaderClicked);
 }
 
 void MainWindow::slot_update_image(QImage im)
@@ -137,11 +153,12 @@ void MainWindow::slot_sub_image_front()
 {   
     // MyDebug("front button clicked");
     std::string imageTopic = "/usb_cam/image_raw";
-    if(isRunFlag && isInput) {
+    if(sysStat.isRun && sysStat.isInput) {
         qnode->sub_image(imageTopic);
-    } else if(isRunFlag) {
+        sysStat.isDisplay = true;
+    } else if(sysStat.isRun) {
         QMessageBox::warning(this, "警告", "请先录入任务信息！");
-    } else if(isInput) {
+    } else if(sysStat.isInput) {
         QMessageBox::warning(this, "警告", "系统未连接，请先点击连接按钮！");
     } else QMessageBox::warning(this, "警告", "请连接系统，并录入检测信息！");
 }
@@ -158,11 +175,12 @@ void MainWindow::slot_sub_image_behind()
 
     // MyDebug("behind button clicked");
     std::string imageTopic = "/usb_cam1/image_raw";
-    if(isRunFlag && isInput) {
+    if(sysStat.isRun && sysStat.isInput) {
         qnode->sub_image(imageTopic);
-    } else if(isRunFlag) {
+        sysStat.isDisplay = true;
+    } else if(sysStat.isRun) {
         QMessageBox::warning(this, "警告", "请先录入任务信息！");
-    } else if(isInput) {
+    } else if(sysStat.isInput) {
         QMessageBox::warning(this, "警告", "系统未连接，请先点击连接按钮！");
     } else QMessageBox::warning(this, "警告", "请连接系统，并录入检测信息！");
 }
@@ -171,14 +189,20 @@ void MainWindow::slot_sub_image_behind()
 ** Auto-connections (connectSlotsByName())
 *******************************************/
 void MainWindow::on_pushButton_connect_clicked() {
-    if(!isRunFlag) {
+    if(!sysStat.isRun) {
         if(qnode->init()) {
             QMessageBox::information(this, "提示", "ROS已连接");
             ui->label_connect->setText("已连接");
-            isRunFlag = true;
+            sysStat.isRun = true;
+            // 更改连接图标为绿色
+            QDir dir(qApp->applicationDirPath());
+            dir.cd("../../../src/camera_display/resources/images");
+            QPixmap pixmap(dir.absoluteFilePath("已连接.png"));
+            ui->label_connect->setPixmap(pixmap);
+            this->timer->stop();  // 停止更新指示灯
+            ui->label_connect->setEnabled(true);  // 一直显示当前颜色(绿色)
         } else {
             QMessageBox::warning(this, "警告", "连接失败，请检查是否启动ROS节点！");
-            ui->label_connect->setText("连接失败");
         }
     }
 }
@@ -218,15 +242,11 @@ void MainWindow::trigerMenu(QAction* act)
     {
         QMessageBox::warning(this, "警告", "声呐未连接！");
     }
-
-    if(act->text() == "本地导出") {
-        copyToUSB();
-    }
 }
 
 
 void MainWindow::handleDataModified(const std::unordered_map<std::string, std::string>& modifiedData) {
-    isInput = true;
+    sysStat.isInput = true;
     // 更新标签显示数据
     ui->label_dectPlace_input->setText(QString::fromStdString(modifiedData.at("place")));
     ui->label_dectTye_input->setText(QString::fromStdString(modifiedData.at("pipeType")));
@@ -248,7 +268,6 @@ void MainWindow::handleDataModified(const std::unordered_map<std::string, std::s
     // 更新视频名
     this->videoName = QString::fromStdString(modifiedData.at("date") + modifiedData.at("num"));
     emit fileName(this->videoName.toStdString());
-    emit finUpdate(false);
 }
 
 bool MainWindow::mysqlInit() {
@@ -647,9 +666,44 @@ void MainWindow::copyMessage(bool flag) {
 }
 
 void MainWindow::on_pushButton_finish_clicked() {
-    if(this->isRunFlag && this->isInput) {
+    if(sysStat.isDisplay && sysStat.isSave) {
+        // 设置按钮状态
+        ui->pushButton_start->setEnabled(true);
+        ui->pushButton_finish->setEnabled(false);
+        ui->pushButton_datainput->setEnabled(true);  // 检测结束，可录入新任务信息
+        // 设置系统状态
+        sysStat.isInput = false;
+        sysStat.isSave = false;
+
         emit this->finUpdate(true);
-        this->isInput = false;
         QMessageBox::information(this, "提示", this->videoName + "检测任务完成，视频数据已储存。若要开始新任务，请重新录入检测信息。");
     }
+}
+
+// 检测开始，开始录制视频文件
+void MainWindow::on_pushButton_start_clicked() {
+    // 确保有视频数据，且不在录制状态，且已经录入信息
+    if(sysStat.isDisplay && !sysStat.isSave && sysStat.isInput) {
+        // 设置按钮状态
+        ui->pushButton_start->setEnabled(false);
+        ui->pushButton_finish->setEnabled(true);
+        ui->pushButton_datainput->setEnabled(false);  // 检测开始，不可录入新任务信息
+        // 通知node节点开始录制视频文件
+        emit this->finUpdate(false);
+        // 更改系统状态
+        sysStat.isSave = true;  // 正在存储视频
+        QMessageBox::information(this, "提示", "检测开始，正在录制检测视频。");
+    } else {
+        QMessageBox::warning(this, "提示", "请选择视频源，等待出现视频画面！");
+    }
+}
+
+void MainWindow::on_pushButton_sonar_clicked() {
+    QMessageBox::warning(this, "警告", "声呐未连接！");
+}
+
+void MainWindow::labelConnectUpdate() {
+    static bool flag = 0;
+    flag = !flag;
+    ui->label_connect->setEnabled(flag);
 }

@@ -136,7 +136,7 @@ void QNode::image_callback(const sensor_msgs::ImageConstPtr &msg)
     // MyDebug("image callback success");
     cv_bridge::CvImagePtr cv_ptr;
     cv_ptr = cv_bridge::toCvCopy(msg, msg->encoding);
-    // 保存图像
+    // 检测未结束，保存视频数据
     if(!this->finFlag) {
       QNode::saveFrameToVideo(cv_ptr->image);
     }
@@ -308,6 +308,7 @@ void QNode::saveFrameToVideo(const cv::Mat& frame) {
   // static const int fourcc = cv::VideoWriter::fourcc('m', 'p', '4', 'v');  // 或者使用 'X', 'V', 'I', 'D'
 
   if(isFirstFrame) {
+    if(videoWriter.isOpened()) videoWriter.release();
     // 参数设置
     const cv::String fileName = this->videoFolder + this->fileName + ".mp4";
     const int frameWidth = rgbImage.cols;
