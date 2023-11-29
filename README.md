@@ -46,3 +46,5 @@
 ## TODO
 - 完善云服务器视频存储中转服务与客户端上传/下载业务
 - 声呐检测/定位等算法部署与检测结果实时可视化
+
+整体实现框架参考蒋老师ROS QT5 GUI App教程[@chengyangkj](https://github.com/chengyangkj/Ros_Qt5_Gui_App)
