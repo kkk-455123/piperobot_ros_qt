@@ -1,6 +1,6 @@
 // #include "mainwindow.h"
 #include "../include/camera_display/mainwindow.h"
-#include "ui_mainwindow.h"
+#include "ui mainwindow.h"
 
 #include <fstream>
 
@@ -121,6 +121,7 @@ void MainWindow::ConnInit() {
 //    connect(&qnode,SIGNAL(position(double,double,double)),this,SLOT(slot_update_pos(double,double,double)));
     // connect(ui->pushButton_front, SIGNAL(clicked()),this,SLOT(slot_sub_image("pushButton_front")));
     // connect(ui->pushButton_behind, SIGNAL(clicked()),this,SLOT(slot_sub_image("ppushButton_behind")));
+    connect(qnode.get(),SIGNAL(temp_humid_val(float,float)),this,SLOT(slot_update_temp_humid(float temp,float humi)))
     connect(ui->pushButton_front, SIGNAL(clicked()),this,SLOT(slot_sub_image_front()));
     connect(ui->pushButton_behind, SIGNAL(clicked()),this,SLOT(slot_sub_image_behind()));
     // ui->label_image->setText("等待视频图像数据...");
@@ -128,6 +129,8 @@ void MainWindow::ConnInit() {
     connect(ui->menubar,SIGNAL(triggered(QAction*)),this,SLOT(trigerMenu(QAction*)));  // 菜单设置触发
     connect(configWindow.get(), SIGNAL(dataModified(const std::unordered_map<std::string, std::string>&)), this, SLOT(handleDataModified(const std::unordered_map<std::string, std::string>&)));  // 信息登记窗口信号接收-槽函数调用
     connect(this->timer, SIGNAL(timeout()), this, SLOT(labelConnectUpdate()));
+
+    
     timer->start(1000);
 
     // 获取表格的 horizontalHeader
@@ -183,6 +186,12 @@ void MainWindow::slot_sub_image_behind()
     } else if(sysStat.isInput) {
         QMessageBox::warning(this, "警告", "系统未连接，请先点击连接按钮！");
     } else QMessageBox::warning(this, "警告", "请连接系统，并录入检测信息！");
+}
+
+//温湿度槽函数
+void MainWindow::temp_humid_val(float temp,float humi)
+{
+    qDebug() << "temp:" << temp << "humid" << humi;
 }
 
 /******************************************
