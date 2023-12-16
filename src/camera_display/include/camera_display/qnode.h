@@ -16,6 +16,7 @@
 #include <QThread>
 #include <QStringListModel>
 #include <std_msgs/String.h>
+#include "std_msgs/Float32MultiArray.h"
 // #include <map>
 // #include <geometry_msgs/Twist.h>
 // #include <nav_msgs/Odometry.h>
@@ -30,7 +31,6 @@
 // opencv保存视频图像
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui/highgui.hpp>
-
 // #include "mainwindow.h"
 
 class MainWindow;
@@ -72,20 +72,24 @@ Q_SIGNALS:
     // void speed_vel(float,float);
     // void power_vel(float);
     void image_val(QImage);
-    // void position(double x,double y,double z);
+    void temp_humid_val(float,float);
+    // voiQd position(double x,double y,double z);
 private:
     int init_argc;
     char** init_argv;
+    //ros::Publisher temp_humid_pub;
     // ros::Publisher chatter_publisher;
     // ros::Publisher cmd_vel_pub;
     // ros::Publisher goal_pub;
     // QStringListModel logging_model;
+    ros::Subscriber temp_humid_sub;
     // ros::Subscriber chatter_sub;
     // ros::Subscriber odom_sub;
     // ros::Subscriber power_sub;
     // ros::Subscriber amcl_pose_sub;
     image_transport::Subscriber image_sub;
     void image_callback(const sensor_msgs::ImageConstPtr &msg);
+    void temp_humid_callback(const std_msgs::Float32MultiArray::ConstPtr& msg);
     // void power_callback(const std_msgs::Float32 &msg);
     // void chatter_callback(const std_msgs::String &msg);
     // void odom_callback(const nav_msgs::Odometry &msg);

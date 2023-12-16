@@ -70,7 +70,7 @@ bool QNode::init() {
 		return false;
 	}
 	ros::start(); // explicitly needed since our nodehandle is going out of scope.
-	// ros::NodeHandle n;
+	 ros::NodeHandle n;
 	// Add your ros communications here.
 	// chatter_publisher = n.advertise<std_msgs::String>("chatter", 1000);
     // chatter_sub=n.subscribe("chatter",1000,&QNode::chatter_callback,this);
@@ -79,7 +79,9 @@ bool QNode::init() {
     // odom_sub=n.subscribe("raw_odom",1000,&QNode::odom_callback,this);
     // amcl_pose_sub=n.subscribe("amcl_pose",1000,&QNode::amcl_pose_callback,this);
     // goal_pub=n.advertise<geometry_msgs::PoseStamped>("move_base_simple/goal",1000);
-	start();  // 开始执行线程任务
+	//temp_humid_pub = n.advertise<std_msgs::Float32MultiArray>("temp_humid",10);
+  temp_humid_sub = n.subscribe<std_msgs::Float32MultiArray>("temp_humid",10,temp_humid_callback);
+  start();  // 开始执行线程任务
 	return true;
 }
 
@@ -189,6 +191,22 @@ QImage QNode::Mat2QImage(cv::Mat const& src)
   return dest;
 }
 
+void temp_humid_callback(const std_msgs::Float32MultiArray::ConstPtr& msg)
+{
+    if(msg->data.size() >= 2)
+    {
+        float temp = msg->data[0];
+        float humi = msg->data[1];
+        emit temp_humid_val(temp,humi);
+        ROS_INFO("Receive temperature:%.2f,humidity:%.2f", temp, humi);
+
+    }
+    else
+    {
+        ROS_INFO("Can't receive data!");
+    }
+
+}
 // void QNode::power_callback(const std_msgs::Float32 &msg)
 // {
 //     emit power_vel(msg.data);

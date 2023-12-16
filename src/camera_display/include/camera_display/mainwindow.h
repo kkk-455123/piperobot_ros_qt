@@ -68,6 +68,7 @@ public slots:
     *******************************************/
 //    void slot_update_power(float);
     void slot_update_image(QImage);
+    void slot_update_temp_humid(float temp,float humi);
     // void slot_sub_image(std::string);  // 订阅图像话题
     void slot_sub_image_front();  // 订阅图像话题
     void slot_sub_image_behind();
