@@ -121,7 +121,7 @@ void MainWindow::ConnInit() {
 //    connect(&qnode,SIGNAL(position(double,double,double)),this,SLOT(slot_update_pos(double,double,double)));
     // connect(ui->pushButton_front, SIGNAL(clicked()),this,SLOT(slot_sub_image("pushButton_front")));
     // connect(ui->pushButton_behind, SIGNAL(clicked()),this,SLOT(slot_sub_image("ppushButton_behind")));
-    connect(qnode.get(),SIGNAL(temp_humid_val(float,float)),this,SLOT(slot_update_temp_humid(float temp,float humi)))
+    connect(qnode.get(),SIGNAL(temp_humid_val(float,float)),this,SLOT(slot_update_temp_humid(float, float)))
     connect(ui->pushButton_front, SIGNAL(clicked()),this,SLOT(slot_sub_image_front()));
     connect(ui->pushButton_behind, SIGNAL(clicked()),this,SLOT(slot_sub_image_behind()));
     // ui->label_image->setText("等待视频图像数据...");
@@ -189,7 +189,7 @@ void MainWindow::slot_sub_image_behind()
 }
 
 //温湿度槽函数
-void MainWindow::temp_humid_val(float temp,float humi)
+void MainWindow::slot_update_temp_humid(float temp, float humi)
 {
     qDebug() << "temp:" << temp << "humid" << humi;
 }
