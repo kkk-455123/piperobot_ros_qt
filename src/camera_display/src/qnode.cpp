@@ -80,7 +80,7 @@ bool QNode::init() {
     // amcl_pose_sub=n.subscribe("amcl_pose",1000,&QNode::amcl_pose_callback,this);
     // goal_pub=n.advertise<geometry_msgs::PoseStamped>("move_base_simple/goal",1000);
 	//temp_humid_pub = n.advertise<std_msgs::Float32MultiArray>("temp_humid",10);
-  temp_humid_sub = n.subscribe<std_msgs::Float32MultiArray>("temp_humid",10,temp_humid_callback);
+  temp_humid_sub = n.subscribe<std_msgs::Float32MultiArray>("temp_humid", 1000, &QNode::temp_humid_callback, this);
   start();  // 开始执行线程任务
 	return true;
 }
