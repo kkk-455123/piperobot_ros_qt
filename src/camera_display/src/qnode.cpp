@@ -191,7 +191,7 @@ QImage QNode::Mat2QImage(cv::Mat const& src)
   return dest;
 }
 
-void temp_humid_callback(const std_msgs::Float32MultiArray::ConstPtr& msg)
+void QNode::temp_humid_callback(const std_msgs::Float32MultiArray::ConstPtr& msg)
 {
     if(msg->data.size() >= 2)
     {
